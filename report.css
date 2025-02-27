@@ -1,0 +1,12 @@
+figure img {
+    max-width: 100%; /* Ensures images do not exceed their container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any inline spacing issues */
+    margin: 0 auto; /* Centers the images */
+}
+
+figure {
+    text-align: center; /* Centers the caption */
+    max-width: 90%; /* Ensures figures do not take up too much space */
+    margin: 20px auto; /* Adds spacing around the figures */
+}

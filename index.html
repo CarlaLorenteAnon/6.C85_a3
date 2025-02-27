@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<link rel="stylesheet" href="report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Carla Lorente</strong> — <em>cla6@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>The visualization a spiral format, which tries to depict the cyclical nature of the pandemic over multiple years. The way the lines wrap around emphasizes how each year builds on the previous one (in a continuous way). </li>
+				<li>I immediately noticed that the peak in early 2022 (probably the Omicron wave) was significantly higher than previous waves, reinforcing just how extreme that surge was.</li>
+				<li>The width of the red bands represents the 7-day average of cases, with wider bands indicating higher case counts. </li>
+				<li>There’s a noticeable seasonal pattern, with case numbers surging in the winter months (late 2020, early 2021, and especially early 2022), which matches what we know about COVID waves.</li>
+				<li>The overall trend suggests a pattern of increasing case peaks each year, with 2022 having the most dramatic spike.</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<ul>
+				<li>This visualization is eye-catching and does a great job of capturing the cyclical nature of COVID-19 surges. The spiral format is a creative choice that reinforces the idea of recurring seasonal peaks, making it immediately clear that case numbers have followed a repeated pattern over time. Additionally, the dramatic widening of the spiral in early 2022 highlights the Omicron wave effectively.</li>
+				<li>The smoothed red line (representing a 7-day average), helps make trends clearer and prevents the noise of daily fluctuations from overwhelming the viewer.</li>
+				<li>The red shading is a strong choice to convey urgency, though I think a deeper, more intense red (closer to the color of blood) might have driven home the severity of the situation even more. Additionally, the use of a single color means that year-over-year comparisons rely solely on position, which may not be the most accessible encoding choice. I found it difficult to judge relative case numbers without more explicit annotations or reference points.</li>
+				<li>The visualization does not differentiate between external factors that influenced case spikes (e.g., new variants, changes in public policy, or vaccine rollouts). A time-series chart with annotations could have helped clarify these trends.</li>
+				<li>While the design is visually compelling, it isn’t the most intuitive for extracting precise insights. The spiral format, though engaging and distinctive, forces the viewer to work a little harder to make comparisons, especially across years. For example, comparing January 2021 to January 2022 is difficult because they are placed far apart, unlike adjacent months, which are easier to track. The early waves in 2020 are also visually smaller, which could unintentionally minimize their perceived impact.</li>
+				<li>Aside from the "150K cases" legend, there aren't many numerical indicators, making it hard to judge exact case counts at different points. Even at Jan 2022, I have a hard time knowing if it is 300K cases vs 450K, which is a big difference. A more traditional time-series chart might have been easier to interpret, or perhaps an interactive version where users could hover over points for more detail would have helped balance storytelling with accessibility.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+			<h3> Sketch #1</h3>
+      		<figure>
+				<img src="HW3_Image1.jpg" alt="New COVID-19 Cases Over Time (2020-2022)" />
+				<figcaption>
+					New COVID-19 Cases Over Time (2020-2022) – A time series graph showing the 7-day average of new COVID-19 cases, highlighting major surges like the initial outbreak, winter surge, Delta variant, and Omicron variant. Winter months are distinctly marked in blue to showcase correlation with peaks.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+			<ul> 
+				<li> <strong>Clear Time-Series Format:</strong> The visualization adopts a traditional time-series format, making it easier to compare trends over time compared to the spiral format.</li> 
+				<li> <strong>Seasonal Differentiation:</strong> The use of color (blue for winter and brown for the rest of the year) highlights the seasonal surges in COVID-19 cases, reinforcing the trend of higher cases in colder months.</li> 
+				<li> <strong>Annotated Key Events:</strong> Labels such as "Initial Outbreak," "Winter Surge," "Delta Variant," and "Omicron Variant" provide crucial context, helping viewers understand what caused specific peaks.</li> 
+				<li> <strong>Improved Readability:</strong> A straightforward line chart improves accessibility by allowing precise value comparisons at different points in time, which was a challenge in the spiral chart.</li> 
+				<li> <strong>Better Use of Space:</strong> Unlike the spiral format, which can make early data look compressed and less significant, this linear format ensures that all points have equal weight and visibility.</li> 
+			</ul>
+			While the time-series chart in Sketch #1 effectively shows the overall trend of COVID-19 cases over time, it doesn’t isolate the impact of specific events, such as lockdowns, mask mandates, or variant surges. This makes it harder to determine how cases changed in response to key moments in the pandemic.
+			<br><br>In the next sketch, I wanted to explore a different way of visualizing event-driven changes by shifting to a dumbbell chart. This format allows for a direct comparison of COVID-19 case counts before and after major events, helping to highlight whether cases increased or decreased after specific policy changes or variant outbreaks. The goal was to make it easier to see the impact of each event at a glance, rather than requiring viewers to interpret trends across an entire timeline.
+			<br>
+			<h3> Sketch #2</h3>
+			<figure>
+				<img src="HW3_Image2.jpg" alt="Dumbell Chart: COVID-19 Cases (7 days before event vs 2 months after)" />
+				<figcaption>
+					Dumbbell Chart: COVID-19 Cases Before and After Key Events – A visualization comparing COVID-19 case numbers 7 days before and 2 months after major events like the first U.S. lockdown, mask mandates, vaccine rollout, and variant surges, indicating increases or decreases with colored arrows.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li><strong>Use of Dumbbell Chart:</strong> This visualization effectively shows the change in COVID-19 cases before and after key events, making it easy to observe trends related to policy changes or major outbreaks. Additionally, the y-axis has the events in chronological order, with 2020 starting at the bottom and 2022 at the top, making it easier for the reader to interpret.</li>
+				<li><strong>Comparison of Different Events:</strong> By listing major events (e.g., Omicron Surge, Vaccine Rollout, First US Lockdown), the chart provides historical context and allows viewers to see how cases responded.</li>
+				<li><strong>Directional Arrows for Clarity:</strong> The red and green arrows help immediately differentiate between case increases and decreases, making it clear whether an event had a positive or negative effect.</li>
+				<li><strong>Color Coding for Readability:</strong> Blue and brown distinguish "7 days before" and "2 months after" case counts, making the comparison intuitive.</li>
+				<li><strong>Clear Legend for Interpretation:</strong> The legend at the bottom right clarifies symbols and colors, ensuring that viewers can quickly understand the visual encoding.</li>
+			</ul>
+			While the dumbbell chart in Sketch 2 effectively highlights how case numbers changed before and after major events, it focuses on specific moments rather than the broader, continuous trends of the pandemic. This means it doesn't fully capture the seasonal patterns of COVID-19 waves or provide an intuitive sense of how case numbers evolved month by month.
+			<br><br>In the next sketch, I wanted to explore a heatmap approach to visualize COVID-19 cases across time in a structured grid. A heatmap allows for a clearer comparison of trends across different years while emphasizing seasonal patterns. By using a color gradient from green to red, this visualization makes it easy to identify periods of low and high case counts at a glance, without needing to follow individual data points.
+			
+			
+			<br>
+			<h3> Sketch #3</h3>
+			<figure>
+				<img src="HW3_Image3.jpg" alt="COVID-19 New Cases Heatmap (USA)" />
+				<figcaption>
+					COVID-19 New Cases Heatmap (USA) – A heatmap displaying the total monthly COVID-19 cases in the U.S. from 2020 to 2022, using a color gradient from green (low number of cases) to red (high number of cases) to show seasonal and annual trends.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li><strong>Use of a Heatmap Grid:</strong> This visualization presents COVID-19 case trends across months and years in a structured heatmap format, making seasonal and yearly patterns more visually distinct.</li>
+				<li><strong>Color Gradient for Case Intensity:</strong> A color scale from green (low number of cases) to red (high number of cases) effectively conveys the severity of each month's case count, allowing for quick visual interpretation.</li>
+				<li><strong>Yearly and Monthly Organization:</strong> The grid structure ensures that viewers can easily compare months within a single year and across different years, which was harder to do in previous visualizations.</li>
+				<li><strong>Summarized Data on Legend:</strong> The additional color-coded reference bar on the legend provides a numerical scale, giving viewers a sense of proportion for each color in the main grid.</li>
+				<li><strong>Pattern Visibility:</strong> The visualization highlights how winter months tend to have higher case numbers, reinforcing the seasonal nature of COVID-19 waves.</li>
+			</ul>
+			Sketch #3 introduced a heatmap approach to visualize COVID-19 case trends, offering a structured way to compare data across months and years. This design effectively highlighted seasonal patterns and provided a clear visual representation of intensity through color gradients. However, while the heatmap was a significant improvement over the original spiral visualization, it still had limitations. It primarily focused on case counts, which, while important, did not provide a holistic view of the pandemic. The sketch also lacked contextual markers for major events, making it difficult to determine how external factors such as policy changes, new virus variants, and vaccine rollouts influenced case numbers. Furthermore, the use of a single heatmap with one color scale did not differentiate between cases, deaths, and recoveries, which are all critical to understanding the broader impact of COVID-19.
+
+			The final visualization builds upon the strengths of the heatmap format while addressing these limitations.
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="Image4_3.png" alt="" />
+				<figcaption>
+					This visualization presents COVID-19 monthly trends across different metrics (new confirmed cases, new deaths, and new recoveries) in the U.S. from 2020 to 2022. It highlights key public health events—such as lockdowns, mask mandates, vaccine rollouts, and new virus variants—using icons to provide contextual insights into pandemic trends.
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+				This visualization was designed to provide a clear, structured, and contextualized view of how COVID-19 cases, deaths, and recoveries evolved across different phases of the pandemic in the United States. The primary goal was to illustrate major trends over time, while also contextualizing key public health interventions (e.g., lockdowns, mask mandates, vaccine rollouts, and the emergence of new virus variants). By breaking the data into three separate heatmaps—one for new confirmed cases, one for deaths, and one for recoveries—the visualization allows for a more holistic interpretation of the pandemic’s trajectory, rather than focusing solely on case counts. This approach helps answer multiple questions: How did cases, deaths, and recoveries fluctuate seasonally? Were surges correlated with new variants? How did policy interventions (such as lockdowns and vaccines) impact these numbers? This structured format makes it easier to compare across years and identify key patterns without the complexity of the original spiral design.
+
+				<br><br>To effectively communicate these insights, I choose heatmaps as the primary visualization type, with color intensity encoding the magnitude of cases, deaths, and recoveries. This format makes seasonal and long-term trends immediately visible, with darker shades indicating higher counts. . Three separate heatmaps were used to ensure that no single metric dominated the analysis and to allow independent comparisons across different aspects of the pandemic. The inclusion of icons for major interventions (lockdowns, mask mandates, vaccines, and new variants) provides important context without cluttering the visual space. The color schemes were carefully selected: a red gradient for cases and deaths (to reflect urgency and severity) and a green gradient for recoveries (to convey improvement) and yellow or new confirmed cases (to convey caution). Monthly aggregation was used instead of daily data to reduce noise and highlight significant trends. However, a limitation of this approach is that short-term fluctuations and precise causal effects (such as the exact delay between interventions and case reductions) are not explicitly captured. Despite this, the structured layout ensures that key insights remain intuitive, interpretable, and actionable, addressing many of the clarity and readability concerns from the original visualization.
+      </p>
+
+      <h3>Reflection</h3>
+
+      <p>
+        The final design effectively addresses many of the critiques surfaced in Step 2 by improving clarity, enhancing comparability across years, and providing crucial contextual information about public health interventions. One of the main concerns with the original spiral chart was its lack of precise numerical references and difficulty in comparing case counts across different years. The heatmap format in this redesign resolves this issue by presenting a structured, side-by-side layout, making it much easier to track trends across months and years. Additionally, by separating cases, deaths, and recoveries into distinct heatmaps, the visualization allows for a more comprehensive understanding of the pandemic's impact rather than focusing solely on new cases. The inclusion of icons marking lockdowns, mask mandates, vaccine rollouts, and new virus variants also fills a major gap in the original visualization, helping to explain why certain surges occurred rather than just showing that they happened.
+
+		<br><br>One limitation of this final design is that monthly aggregation, while reducing noise, may obscure short-term fluctuations that could be critical for understanding rapid pandemic shifts.
+      </p>
+		</section>
+	</main>
+</body>
+</html>
